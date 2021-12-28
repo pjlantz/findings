@@ -1,7 +1,7 @@
 # CVE-2020-12460: Heap-overflow in OpenDMARC
 
 ## Summary
-OpenDMARC through 1.3.2 and 1.4.x through 1.4.0-Beta1 has improper null termination in the function opendmarc_xml_parse that can result in a one-byte heap overflow in opendmarc_xml when parsing a specially crafted DMARC aggregate report. This can cause remote memory corruption when a `'\0'` byte overwrites the heap metadata of the next chunk and its PREV_INUSE flag [1].
+OpenDMARC through 1.3.2 and 1.4.x through 1.4.0-Beta1 has improper null termination in the function opendmarc_xml_parse that can result in a one-byte heap overflow in `opendmarc_xml` when parsing a specially crafted DMARC aggregate report. This can cause remote memory corruption when a `'\0'` byte overwrites the heap metadata of the next chunk and its `PREV_INUSE` flag [1].
 
 ## Details
 
