@@ -1,6 +1,6 @@
 # CVE-2020-13848: Denial of Service in Portable UPnP SDK (aka libupnp)
 
-Portable UPnP SDK (aka libupnp) 1.12.1 and earlier allows remote attackers to cause a denial of service (crash) via a crafted SSDP message due to a NULL pointer dereference in the functions `FindServiceControlURLPath` and `FindServiceEventURLPath` in `genlib/service_table/service_table.c` [1].
+Portable UPnP SDK (aka libupnp) [4] 1.12.1 and earlier allows remote attackers to cause a denial of service (crash) via a crafted SSDP message due to a NULL pointer dereference in the functions `FindServiceControlURLPath` and `FindServiceEventURLPath` in `genlib/service_table/service_table.c` [1].
 
 ## Details
 There is a NULL pointer dereference in the function `FindServiceControlURLPath` in `genlib/service_table/service_table.c`.
@@ -74,3 +74,6 @@ This was tested on the current master branch and on release 1.6.6. Earlier versi
 [2] [subscribe.txt](https://github.com/pjlantz/pjlantz.github.io/blob/master/docs/assets/subscribe.txt)
 
 [3] [unsubscribe.txt](https://github.com/pjlantz/pjlantz.github.io/blob/master/docs/assets/unsubscribe.txt)
+
+[4] The Portable SDK for UPnP* Devices (libupnp) - https://github.com/pupnp/pupnp
+
