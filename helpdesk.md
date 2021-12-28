@@ -49,7 +49,7 @@ Content-Disposition: form-data; name="hideit"
 This request is used to deliver the XSS payload for triggering the other vulnerabilites, specifically: 
 
 1. Enabling file attachments in ticket messages
-2. Adding 'phar' to allowed file extensions
+2. Adding `phar` to allowed file extensions
 3. Setting the attachment directory to 'helpdesk/files/../../../pub'
 
 Full payload performing the above actions:
