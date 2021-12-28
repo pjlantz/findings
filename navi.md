@@ -14,6 +14,6 @@ Patch is available in [3].
 
 [1] NaviServer - https://sourceforge.net/projects/naviserver/
 
-[2] Wild copy - https://googleprojectzero.blogspot.com/2015/03/taming-wild-copy-parallel-thread.html
+[2] Google Project Zero: Taming the wild copy: Parallel Thread Corruption - https://googleprojectzero.blogspot.com/2015/03/taming-wild-copy-parallel-thread.html
 
 [3] Patch - https://bitbucket.org/naviserver/naviserver/commits/a5c3079f1d8996d5f34c9384a440acf3519ca3bb
