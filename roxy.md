@@ -1,7 +1,7 @@
 # CVE-2019-19731: Directory traversal in Roxy Fileman for .NET 1.4.5
 
 Roxy Fileman 1.4.5 for .NET is vulnerable to path traversal which can lead to file write in arbitrary locations depending on 
-the IIS worker process privileges. This PoC demonstrates a crafted Windows shortcut file being uploaded and written to the Startup folder. The execution
+the IIS worker process privileges [1]. This PoC demonstrates a crafted Windows shortcut file being uploaded and written to the Startup folder. The execution
 of this file will be triggered on the next login.
 
 ## Proof of concept
@@ -97,3 +97,6 @@ Recommendations for users of Roxy Fileman:
 - 2019-12-06: Reported to the vendor (vendor is unresponsive)
 - 2019-12-11: Request CVE
 - 2019-12-13: Advisory published
+
+## References
+[1] CVE-2019-19731 - https://nvd.nist.gov/vuln/detail/CVE-2019-19731
