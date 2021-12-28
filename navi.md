@@ -2,6 +2,12 @@
 
 NaviServer 4.99.4 to 4.99.19 mishandles parsing and validation of chunk lengths in the function `ChunkedDecode` in `driver.c`  This will result in a negative value being passed to memmove via the `size` parameter, causing a huge copy to hit an unmapped page, so called wild copy and termination of the `nsd` process.
 
+The following request is used to reproduce this issue:
+
+```
+echo -e "POST / HTTP/1.1\r\nTransfer-Encoding: chunked\r\n\r\n-1\r\nchunk\r\n0\r\n\r\n" | nc localhost 8080
+```
+
 Patch is available in [3].
 
 ## References 
