@@ -46,7 +46,7 @@ Content-Disposition: form-data; name="hideit"
 -----------------------------243970849510445067673127196635--
 ```
 
-This request is used to deliver the XSS payload for triggering the other vulnerabilites, specifically: 
+This request can be used to deliver the XSS payload and triggering the other vulnerabilites, specifically: 
 
 1. Enabling file attachments in ticket messages
 2. Adding `phar` to allowed file extensions
