@@ -5,7 +5,7 @@ Portable UPnP SDK (aka libupnp) 1.12.1 and earlier allows remote attackers to ca
 ## Details
 There is a NULL pointer dereference in the function `FindServiceControlURLPath` in `genlib/service_table/service_table.c`.
 
-A segmentation fault occurs if the string `controlURLPath` is NULL. This crash can be triggered by sending a malformed `SUBSCRIBE` or `UNSUBSCRIBE` using any of the attached files.
+A segmentation fault occurs if the string `controlURLPath` is NULL. This crash can be triggered by sending a malformed `SUBSCRIBE` or `UNSUBSCRIBE` using any of the attached files [2,3].
 
 ```
 cat <subscribe/unsubscribe>.txt | nc <ip> 49152
