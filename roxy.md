@@ -4,6 +4,8 @@ Roxy Fileman 1.4.5 for .NET is vulnerable to path traversal which can lead to fi
 the IIS worker process privileges [1]. This PoC demonstrates a crafted Windows shortcut file being uploaded and written to the Startup folder. The execution
 of this file will be triggered on the next login.
 
+Tested on ASP.NET 4.0.30319 and Microsoft-IIS 10.0, Windows 10 Pro Build 17134.
+
 ## Proof of concept
 
 It's possible to write an uploaded file to arbitrary locations using the `RENAMEFILE` action.
