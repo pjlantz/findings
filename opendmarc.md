@@ -1,7 +1,7 @@
 # CVE-2020-12460: Heap-overflow in OpenDMARC
 
 ## Summary
-OpenDMARC through 1.3.2 and 1.4.x through 1.4.0-Beta1 has improper null termination in the function opendmarc_xml_parse that can result in a one-byte heap overflow in opendmarc_xml when parsing a specially crafted DMARC aggregate report. This can cause remote memory corruption when a '\0' byte overwrites the heap metadata of the next chunk and its PREV_INUSE flag [1].
+OpenDMARC through 1.3.2 and 1.4.x through 1.4.0-Beta1 has improper null termination in the function opendmarc_xml_parse that can result in a one-byte heap overflow in opendmarc_xml when parsing a specially crafted DMARC aggregate report. This can cause remote memory corruption when a `'\0'` byte overwrites the heap metadata of the next chunk and its PREV_INUSE flag [1].
 
 ## Details
 
@@ -50,7 +50,7 @@ $1 = 0x605010 "<feedback"
 (gdb) 
 ```
 
-A remote attacker could provide a specially crafted report that is parsed by this library, causing a denial of service. It could possibly lead to code execution depending on how libopendmarc is used and integrated into the application, in particular if the opendmarc_xml function is used explicitly without calling opendmarc_xml_parse and with input that is not null-terminated.
+A remote attacker could provide a specially crafted report that is parsed by this library, causing a denial of service. It could possibly lead to code execution depending on how libopendmarc is used and integrated into the application, in particular if the `opendmarc_xml` function is used explicitly without calling `opendmarc_xml_parse` and with input that is not null-terminated.
 
 A DMARC aggregate report that triggers this vulnerability can be generated using the following commands:
 
