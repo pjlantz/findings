@@ -1,6 +1,6 @@
 
 
-# Remote code execution via a Magento 2 Help Desk extension
+# Remote code execution via a Magento Help Desk extension
 
 The Mangento 2 Help Desk extension from Wyomind [1,2] up to and including version 1.3.6 is vulnerable to stored XSS, directory traversal and unrestricted upload of a dangerous file type. These vulnerabilites combined could lead to code execution.
 
