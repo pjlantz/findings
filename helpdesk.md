@@ -273,7 +273,7 @@ under the Magento root dir. This config file has the following list of extension
 </protected_extensions>
 ```
 
-`phar` files seem to be executed by the web server and PHP using default settings in the environment where this was tested on. 
+`phar` files seem to be executed by the web server and PHP using default settings in the environment where this was tested on. Much like the scenario described with the Help Desk extension, the risk lies in extensions enabling such files to be uploaded and executed.
 
 A recommendation for hardening a Magento instance is therefore to add `<phar>phar</phar>` to this list, and then refreshing the cache in the Magento2 administrative interface in order to complete the addition of `phar` files to the list of disallowed extensions. Again, this can be verified by adding downloadable products and trying to upload a `phar` file and it will now instead provide with an error about disallowed file type.
 
