@@ -61,7 +61,7 @@ printf '<feedback></feedback>' > poc.xml; printf 'A%.0s' {1..1053} >> poc.xml; p
 A C program that calls `opendmarc_xml_parse` with the poc above is enough to trigger the vulnerability.
 
 ## Timeline
-- 2020-07 - Reported to the Trusted Domain project [2]
+- 2020-07 - Reported to the Trusted Domain project [2].
 - 2020-09 - Fixed by the maintainers.
 
 ## References
