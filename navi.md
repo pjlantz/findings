@@ -1,6 +1,6 @@
 # CVE-2020-13111: Out-of-bounds write in NaviServer
 
-NaviServer 4.99.4 to 4.99.19 mishandles parsing and validation of chunk lengths in the function `ChunkedDecode` in `driver.c`  This will result in a negative value being passed to memmove via the `size` parameter, causing a huge copy to hit an unmapped page, so called wild copy and termination of the `nsd` process.
+NaviServer [1] 4.99.4 to 4.99.19 mishandles parsing and validation of chunk lengths in the function `ChunkedDecode` in `driver.c`  This will result in a negative value being passed to memmove via the `size` parameter, causing a huge copy to hit an unmapped page, so called wild copy [2] and termination of the `nsd` process.
 
 The following request is used to reproduce this issue:
 
