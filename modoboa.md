@@ -149,12 +149,12 @@ Another possible attack is a variant of the previous one. This one can cause a D
       <br /><em>Figure 1. Increasing number of processes</em>
 </p>
 
-Following this, the web application will become unresponsive, showing the following error message
+Soon after, the web application will become unresponsive, showing the following error message
 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/197917/70522744-04c48180-1b42-11ea-8ae7-7114d77e7dcb.png" alt="DoS" width="75%" height="75%"/>
-      <br /><em>Figure 2. Denial of service against the web server</em>
+      <br /><em>Figure 2. Denial of service against the web application</em>
 </p>
 
 The worst-case scenario is that the concurrent processes will consume all RAM on the hosting server.
