@@ -90,8 +90,7 @@ ubus call sync sync_wifi '%s'
 
 This allows an attacker to still break out of the current command with `';` and inject more commands.
 
-To summarize, the root cause of the command injection is now the Lua script as opposed to the previous case where the command injection was possible via the system function in the
-tdpServer binary.
+To summarize, the root cause of the command injection is now the Lua script as opposed to the previous case where the command injection was possible via the `system` function in the tdpServer binary.
 
 ## References
 [1] https://nvd.nist.gov/vuln/detail/CVE-2020-10882
