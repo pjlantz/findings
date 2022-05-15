@@ -1,6 +1,6 @@
 # Command injection in TP-Link Archer A7
 
-CVE-2020-10882 [1] was used to exploit the TP-Link Archer C7 in Pwn2Own 2019. This write-up provides details about the patch that was issued by TP-Link for this vulnerability and why it is insufficient as a remediation for the command injection.
+CVE-2020-10882 [1] was used to exploit the TP-Link Archer C7 in Pwn2Own 2019. This write-up provides details about the patch that was issued by TP-Link for this vulnerability and why it is insufficient as a remediation.
 
 
 ## Details
