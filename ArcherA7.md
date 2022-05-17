@@ -2,6 +2,7 @@
 
 CVE-2020-10882 [1] was used to exploit the TP-Link Archer C7 in Pwn2Own 2019. This write-up provides details about the patch that was issued by TP-Link for this vulnerability and why it is insufficient as a remediation.
 
+Exploiting this flaw was my contribution as part of Team F-Secure Labs in Pwn2Own 2020 in Tokyo but TP-Link patched this one day before the start of the competition.
 
 ## Details
 During the parsing of a Slave Key Offer message to the device, a MAC address can be supplied in the `slave_mac` parameter as shown below
