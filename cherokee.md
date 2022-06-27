@@ -1,4 +1,4 @@
-# CVE-2020-12845: Denial of Service in Cherokee Web Server 0.4.27 to 1.2.104
+# CVE-2020-12845: Denial of Service in Cherokee Web Server
 
 Cherokee Web Server [1,2] 0.4.27 to 1.2.104 is affected by a denial of service due to a NULL pointer dereferences [3]. A remote unauthenticated attacker can crash the server by sending an HTTP request to protected resources using a malformed `Authorization` header.
 
