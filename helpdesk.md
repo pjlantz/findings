@@ -285,7 +285,7 @@ A recommendation for hardening a Magento instance is therefore to add `<phar>pha
 - 2021-04 - Adobe is contacted regarding the issue with dangerous file extensions. 
 - 2021-05 - Adobe does not consider it to be a security issue.
 - 2021-07 - MITRE is contacted regarding the CVE request. Response is that there is a long backlog with requests.
-- 2023-02 - MITRE issues CVE ids CVE-2021-33351, CVE-2021-33352, CVE-2021-33353.
+- 2023-02 - MITRE issues CVEs CVE-2021-33351, CVE-2021-33352, CVE-2021-33353.
 
 
 ## References
